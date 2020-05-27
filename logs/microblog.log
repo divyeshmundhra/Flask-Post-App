@@ -1,0 +1,126 @@
+2020-05-26 17:09:03,346 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 17:27:39,642 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 17:27:47,810 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 18:18:50,642 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 18:44:31,591 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 19:03:37,841 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 19:04:10,884 ERROR: Exception on /explore [GET] [in c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Divyesh\Desktop\microblog\app\routes.py", line 146, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 19:05:39,718 ERROR: Exception on /explore [GET] [in c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Divyesh\Desktop\microblog\app\routes.py", line 146, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 19:06:43,328 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 19:06:49,465 ERROR: Exception on /explore [GET] [in c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Divyesh\Desktop\microblog\app\routes.py", line 146, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Divyesh\Desktop\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "c:\users\divyesh\desktop\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-05-26 19:11:06,146 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 19:21:31,616 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:47]
+2020-05-26 22:39:17,554 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:48]
+2020-05-26 23:00:17,165 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:48]
+2020-05-27 12:53:30,528 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:50]
+2020-05-27 13:10:38,568 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:52]
+2020-05-27 13:13:45,957 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:52]
+2020-05-27 13:13:49,518 INFO: Microblog startup [in C:\Users\Divyesh\Desktop\microblog\app\__init__.py:52]
